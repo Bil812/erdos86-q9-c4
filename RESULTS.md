@@ -1,4 +1,4 @@
-# ex(Q9, C4) ≥ 1532 — new explicit lower bound (2026-10-17)
+# f(9) ≥ 1532 — explicit C₄-free subgraph of Q₉ (lower bound only, 2026-10-18)
 
 ## Claim
 
@@ -14,9 +14,9 @@ SHA-256: `D701BD189B9C79466089A2A1F8601C2FCBF82833F0A7C717938C35DA1F52A8B1`.
 A **second, different** 1532-edge solution exists: `q9b_spin_6.txt`
 (differs from the first in 1016 edges, same verification).
 
-## Public record this improves
+## Relation to prior public work (as of 2026-10-18)
 
-The public record was **1531**:
+The best public Q₉ lower bound we could find was **1531** (unreviewed, AI-assisted):
 * "Erdős #86: a 1,531-edge C4-free subgraph of Q9", Erdős Problem a Day, 2026-08-11,
   <https://erdosproblemaday.com/day/86-hypercube-q9-1531> (with an audited 1,506-edge
   predecessor and an identified external 1,505-edge certificate; the page states that
@@ -88,7 +88,7 @@ spin configuration, and proves by `native_decide`:
 * the fully frustrated identity: the four-coupling product around every square is −1;
 * `ex_Q9_C4_at_least_1532` bundling the above.
 
-**Checked with Lean 4.35.0 (Windows) on 2026-10-18:**
+**Checked with Lean 4.35.0 (Windows) on 2026-10-18.** The proof uses `native_decide` (trusted native evaluation), not a pure kernel reduction; `#print axioms` shows the `native_decide` evaluation axioms — see `lean/AXIOMS.log`. There is no `sorry`/`admit` and no hand-written `axiom`.
 
 ```
 $ lean Q9Witness.lean

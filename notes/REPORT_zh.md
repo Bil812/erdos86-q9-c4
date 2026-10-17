@@ -1,7 +1,7 @@
 # 一个开放问题的 AI 攻坚：Erdős #86 / ex(Q₉, C₄) ≥ 1532
 
 > 本轮结论（2026-10-18）：我们独立构造并验证了 **Q₉ 上 1532 条边的无 C₄ 子图**，
-> 把该问题的公开显式下界从 **1531** 提高到 **1532**（Erdős 问题 #86）。
+> 把该问题的公开可查最好下界从 **1531** 提高到 **1532**（+1，仅下界）（Erdős 问题 #86）。
 > 下界里程碑，非最优性结论；公开来源比对截至 2026-10-17。
 
 ---
@@ -11,7 +11,7 @@
 | 项 | 结果 |
 |---|---|
 | 目标问题 | Erdős #86：超立方体 Q₉ 中不含 4-圈（C₄）的子图最多能有多少条边，即 ex(Q₉, C₄) |
-| 公开纪录（动手前） | **1531**（Erdős Problem a Day，2026-08-11，明确记录"尝试扩到 1532 未成功"） |
+| 公开发表的最好下界（动手前，可查来源） | **1531**（Erdős Problem a Day，2026-08-11，明确记录"尝试扩到 1532 未成功"） |
 | 本轮结果 | **ex(Q₉, C₄) ≥ 1532** —— 显式边集，两个独立解，三个独立验证器全部通过 |
 | 构造方法 | 全受挫（fully frustrated）Ising 耦合的正边构造 + 512 自旋模拟退火 |
 | 形式验证 | **Lean 4.35.0 通过**（exit 0，5.1 s；负向对照被正确拒绝），证书 `research/lean/Q9Witness.lean` |
@@ -145,7 +145,7 @@ lean research/lean/Q9Witness.lean
 
 | 路径 | 内容 |
 |---|---|
-| `research/c4-hypercube/edges_q9_1532.txt` | **新纪录见证**（1532 条边，C₄-free） |
+| `research/c4-hypercube/edges_q9_1532.txt` | **见证文件**（1532 条边，C₄-free；仅下界） |
 | `research/c4-hypercube/RESULTS_Q9.md` | Q₉ 结果的详细说明 |
 | `research/lean/Q9Witness.lean` | Lean 4 证书 |
 | `research/common/verify_q7.py` / `verify_c4_alt.py` | 两个独立验证器 |

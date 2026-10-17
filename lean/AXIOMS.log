@@ -1,0 +1,17 @@
+Lean 4.35.0 (x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc)
+Command: lean Q9Witness.lean, with the following lines appended:
+
+#print axioms Q9.ex_Q9_C4_at_least_1532
+#print axioms Q9.certificate_ok
+
+Output:
+
+'Q9.ex_Q9_C4_at_least_1532' depends on axioms: [Q9.edges_all_valid._native.native_decide.ax_1_1,
+ Q9.edges_length._native.native_decide.ax_1_1,
+ Q9.no_four_cycle_direct._native.native_decide.ax_1_1]
+'Q9.certificate_ok' depends on axioms: [Q9.certificate_ok._native.native_decide.ax_1_1]
+
+Interpretation (disclosed on purpose): the proof uses `native_decide`, i.e. trusted
+native evaluation.  These are the evaluation axioms, NOT only the three standard axioms.
+There is no `sorry`, no `admit`, and no hand-written `axiom` declaration in the file.
+Exit code of the uninterrupted run: 0.
