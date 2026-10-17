@@ -41,14 +41,14 @@ review, and it must be phrased as a lower bound with the repository as the sourc
 
 ## Safe one-liners
 
-- **Conservative (CV / interview):**
-  > 参与 Erdős #86（超立方体上的 C₄-free 子图问题）的 Q₉ 有限下界计算：在 AI agent
-  > 辅助搜索下构造出 1532 条边的无 C₄ 子图，经 Python 穷举（4608 个 4-环）与 Lean 4
-  > 双重验证，得到 f(9) ≥ 1532，较当时公开可查最好 1531 提高 1；只涉及有限情形，不涉及
-  > 渐近猜想。证书与验证脚本已公开于 GitHub。
+- **Conservative (honest description):**
+  > 我让 AI agent（DeepSeek Harness）对 Erdős #86 做了一次 Q₉ 有限下界计算：AI 构造出
+  > 1532 条边的无 C₄ 子图，并经 Python 穷举与 Lean 4 验证，得 f(9) ≥ 1532（较公开可查
+  > 最好 1531 +1，仅下界）。我的角色是提出任务并公开结果，数学与验证由 AI 完成。
 - **Standard (README / submission):**
   > We exhibit an explicit C₄-free subgraph of Q₉ with 1532 edges, establishing the lower
   > bound f(9) ≥ 1532.  Certificate: `edges_q9_1532.txt` (SHA-256 `D701BD18…52A8B1`).
   > Verified by independent Python checkers (all 4608 four-cycles) and by Lean 4.35.0
   > (`native_decide`; evaluation axioms disclosed).  Lower bound only; no priority claim.
-  > AI-assisted; human author directed, verified and wrote up.
+  > Produced by AI agents; the human account owner initiated the task and authorised
+  > publication, and did no mathematical work.

@@ -34,11 +34,13 @@ Relation to public work we could find (as of 2026-10-18): 1505 (explicit GitHub 
 May 2026) and 1531 (Erdős Problem a Day, 2026-08-11, unreviewed).  OEIS A245762 has no a(9)
 term.  This is +1 over the best public claim we could find.
 
-AI disclosure: the computational search and draft scaffolding were produced by AI agents
-under my direction; I selected the problem and method, independently re-verified the
-certificate, and wrote the verification record.
+Provenance / AI disclosure: this work was produced by AI agents (DeepSeek Harness,
+deepseek-flash) operated from the account Bil812. The human account owner's role was
+limited to initiating the task, approving the direction, and authorising publication; the
+human did not do the mathematics and did not run or check the verifiers. AI errors are
+possible and independent reproduction is welcome.
 
-If useful, I can provide any additional format (e.g., a CNF/DRAT-style certificate of
+If useful, the account can provide any additional format (e.g., a CNF/DRAT-style certificate of
 C4-freeness) or run further checks.
 
 Best regards,

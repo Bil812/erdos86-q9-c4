@@ -59,30 +59,31 @@ Literature review (OEIS A245762, erdősproblems.com/86, Minamoto arXiv:2603.2912
 | OEIS A245762 | no a(9) | — | a(1..6) only; comments to a(8) |
 | This work | **1532** | 2026-10-17 | +1 over the best public claim found |
 
-### AI disclosure
+### Provenance / AI disclosure
 
-This work was **AI-assisted**. The computational search and the draft Lean/Python scaffolding were produced by an AI agent (AI agents (DeepSeek Harness, deepseek-flash)) under human direction; the human author (Bil812) selected the problem and method, directed the search, independently re-verified the certificate (Python and Lean on a separate machine/run), wrote the verification record, and is responsible for the claims. The certificate itself should be judged by the explicit edge list and the standalone verifiers, not by authorship.
+**This work was produced by AI agents; it is not human mathematical work.** Problem selection, literature audit, the fully frustrated construction, the computational search, the three independent verifiers, the Lean formalisation (including obtaining the Lean toolchain), and the write-up were all done by AI agents (DeepSeek Harness, model `deepseek-flash`) operated from the account `Bil812`. The human account owner's role was limited to initiating the task, approving the general direction, and authorising publication; the human did *not* do the mathematics and did *not* run or check the verifiers. The certificate should be judged by the explicit edge list and the standalone verifiers, not by authorship. AI errors are possible; independent reproduction is welcome.
 
-### Authorship / date / priority
+### Date / repository / priority
 
-- Author: Bil812 (GitHub)
+- Produced by: AI agents (DeepSeek Harness, `deepseek-flash`), account Bil812
+- Account owner / publisher: Bil812 (initiated the task, authorised publication; no mathematical contribution)
 - Date: 2026-10-18
-- Repository: https://github.com/Bil812/erdos86-q9-c4, commit tag v1.0 (commit hash: see git log / tag)
+- Repository: https://github.com/Bil812/erdos86-q9-c4 (tag v1.0)
 - This declaration is made public on 2026-10-18 to establish a timestamp for the certificate.
 
 ---
 
-## C. 保守档：综评“其他研究经历”/面试用（2—3 句）
+## C. 保守档：如实描述（综评/面试用，2—3 句）
 
-> 我参与了 Erdős #86（超立方体上的 C₄-free 子图问题）的 Q₉ 有限下界计算：在 AI agent 辅助搜索下，构造出一个 1532 条边的无 C₄ 子图，并用 Python 穷举（4608 个 4-环）和 Lean 4 形式化双重验证，得到 f(9) ≥ 1532，较当时公开最好结果 1531 提高 1。该工作只给出下界，不涉及渐近猜想；证书与验证脚本已已公开于 GitHub。
+> 我让 AI agent（DeepSeek Harness）对 Erdős #86（超立方体上的 C₄-free 子图问题）做了一次有限下界计算：AI 构造出 Q₉ 上 1532 条边的无 C₄ 子图，并用 Python 穷举（4608 个 4-环）和 Lean 4 完成验证，得到 f(9) ≥ 1532（较公开可查最好 1531 +1，仅下界）。我的角色是提出任务、决定方向并公开结果；数学与验证由 AI 完成，本人未做独立数学工作。
 
-面试一句话：
+如实的一句话（不要写成“我解决了/我发现了”）：
 
-> 我用 AI 做计算搜索、用 Lean 做机器验证，找到了一个问题的一个 +1 下界——重点不是那 1 条边，而是“AI 产出 + 可独立复核”的流程。
+> 我用 AI 完成了一次开放问题的计算搜索尝试：AI 产出 + 机器验证 + 可公开复核的证书；价值在流程与可验证性，而不在我个人的数学贡献。
 
 ---
 
-## D. 红线：这些话不能说
+## D. 红线：这些话不能说（含“把 AI 的工作说成自己的”）
 
 - ❌ “我解决了 Erdős #86 / 超立方体 Turán 问题” → 只解决了 n=9 的一个下界。
 - ❌ “ex(Q₉, C₄) = 1532 / 精确值” → 只是下界。

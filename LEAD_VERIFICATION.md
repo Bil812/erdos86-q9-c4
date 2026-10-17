@@ -1,4 +1,9 @@
-# Lead independent verification — Q9, 1532-edge C4-free certificate
+# Independent re-verification — Q9, 1532-edge C4-free certificate
+
+> **Provenance note.** "Lead" here is the AI orchestrator agent.  This re-check was run by a
+> *different AI agent* than the one that found the witness (different verifier code, separate
+> Lean run).  It is **not** a human verification: the human account owner did not run or
+> check anything.  Judge the result from the reproduction commands below.
 
 Date: 2026-10-18
 Artifact under test:

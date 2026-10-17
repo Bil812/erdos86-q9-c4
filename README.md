@@ -6,6 +6,9 @@
 >
 > This is **not** a determination of f(9), **not** a proof of optimality, and **not** a
 > resolution of the asymptotic Erdős #86 question. No priority is claimed.
+>
+> **Provenance:** the entire research workflow was carried out by **AI agents**; the human
+> account owner only initiated the task and authorised publication. See *Provenance* below.
 
 ## Witness
 
@@ -111,23 +114,29 @@ Marinari–Parisi–Ritort (1995) for n = 8; the certificate here is an explicit
 
 We do not claim 1532 is the record, the first, or the best possible value.
 
-## AI disclosure
+## Provenance (AI disclosure)
 
-This work was **AI-assisted**.  The computational search and the draft Python/Lean
-scaffolding were produced by AI agents under human direction; the human author selected the
-problem and the method (fully frustrated construction), directed the search, independently
-re-verified the certificate (separate Python verifier and Lean run, see
-`LEAD_VERIFICATION.md`), wrote the verification record, and is responsible for the claims.
-Judgement of the certificate should rest on the explicit edge list and the standalone
-verifiers, not on authorship.
+**This work was produced by AI agents; it is not human mathematical work.**  Problem
+selection, literature audit, the fully frustrated construction, the spin search, the three
+independent verifiers, the Lean formalisation (including obtaining the Lean toolchain), and
+this write-up were all done by AI agents (DeepSeek Harness, model `deepseek-flash`)
+operated from the account `Bil812`.  The human account owner's role was limited to
+initiating the task, approving the general direction, and authorising publication; the
+human did **not** do the mathematics, did **not** run or check the verifiers, and claims
+no authorship of the result.  AI errors are possible, and independent reproduction is
+welcome.  The certificate should be judged only on the explicit edge list and the
+standalone verifiers.
 
 ## Authorship, date, repository
 
-* Author: **Bil812** (GitHub)
+* Produced by: **AI agents** (DeepSeek Harness, `deepseek-flash`) operated from account **Bil812**
+* Account owner / publisher: **Bil812** (initiated the task, approved the direction,
+  authorised publication; no mathematical contribution)
 * Date: **2026-10-18**
 * Repository: <https://github.com/Bil812/erdos86-q9-c4> (tag **`v1.0`**)
 * Declaration template and the three-tier wording guidance: `DECLARATION.md`
-* Independent verification record: `LEAD_VERIFICATION.md`
+* Re-verification record: `LEAD_VERIFICATION.md` (independent re-implementation by a
+  *different* AI agent; **not** a human check)
 * File hashes: `MANIFEST.sha256`
 
 ## Files
@@ -143,7 +152,7 @@ verifiers, not on authorship.
 | `lean/CHECK.log` | Lean run transcript + negative control |
 | `lean/AXIOMS.log` | `#print axioms` output (`native_decide` axioms) |
 | `DECLARATION.md` | declaration templates (standard / conservative / red lines) |
-| `LEAD_VERIFICATION.md` | independent human-side verification record |
+| `LEAD_VERIFICATION.md` | re-verification record (separate AI agent; not a human check) |
 | `notes/REPORT_zh.md` | full session report (Chinese) |
 | `notes/` | negative results from the same session (Q7/Q8, A276661) — clearly labelled |
 | `submission/` | community-submission texts (Erdős Problem a Day, OEIS comment draft, email) |
@@ -153,7 +162,7 @@ verifiers, not on authorship.
 ```bibtex
 @misc{exq9c4_1532,
   title  = {An explicit 1532-edge C4-free subgraph of the 9-dimensional hypercube},
-  author = {Bil812},
+  author = {Bil812 (account holder) and DeepSeek Harness AI agents},
   year   = {2026},
   note   = {Lower bound f(9) >= 1532; Python verifiers and a Lean 4 certificate;
             AI-assisted, see README},

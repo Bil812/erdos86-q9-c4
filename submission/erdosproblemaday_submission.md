@@ -42,7 +42,8 @@ ground states for D = 9).
 **Scope:** does not determine `f(9)`, does not prove optimality, does not address the
 asymptotic question.  The construction is an odd-square / fully frustrated Ising set.
 
-**AI disclosure:** the computational search and the draft verifier/Lean scaffolding were
-produced by AI agents under human direction; the human author selected the problem/method,
-directed the search, independently re-verified the certificate (separate Python verifier and
-Lean run), and wrote the verification record.
+**Provenance / AI disclosure:** this work was produced by **AI agents** (DeepSeek Harness,
+`deepseek-flash`) operated from the account `Bil812`; the human account owner only initiated
+the task, approved the direction, and authorised publication. The human did not do the
+mathematics and did not run or check the verifiers. AI errors are possible, and independent
+reproduction is welcome.
