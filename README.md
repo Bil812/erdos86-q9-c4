@@ -13,6 +13,9 @@
   distance exactly 1; 1532 distinct edges.
 * **SHA-256** of `edges_q9_1532.txt`:
   `D701BD189B9C79466089A2A1F8601C2FCBF82833F0A7C717938C35DA1F52A8B1`.
+  The repository stores all files byte-for-byte (`.gitattributes` sets `* -text`), so this
+  hash refers to the exact bytes you get from GitHub; `MANIFEST.sha256` lists the hash of
+  every file.
 * The graph is the set of positive edges of a fully frustrated (odd-square) Ising
   configuration on Q₉: every one of the 4608 square faces of Q₉ has exactly 1 or 3 selected
   edges.  The 512-spin configuration is in `spins_q9.txt`.

@@ -1,0 +1,5 @@
+# Store every file byte-for-byte.  In particular the certificate
+# `edges_q9_1532.txt` is stored exactly as distributed (CRLF line endings),
+# so its published SHA-256 and the bytes served by GitHub agree:
+#   D701BD189B9C79466089A2A1F8601C2FCBF82833F0A7C717938C35DA1F52A8B1
+* -text
