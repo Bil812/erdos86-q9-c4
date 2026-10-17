@@ -15,7 +15,7 @@ Artifact under test:
 
 Command:
 
-    python research\lead_verify\verify_q9.py research\c4-hypercube\edges_q9_1532.txt 9
+    python verifiers/lead_verify_q9.py edges_q9_1532.txt 9
 
 Output:
 
@@ -33,7 +33,7 @@ Output:
 Toolchain: Lean 4.35.0 (x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc).
 Command:
 
-    D:\lean-work\lean3\lean-4.35.0-windows\bin\lean.exe research\lean\Q9Witness.lean
+    lean lean/Q9Witness.lean
 
 Result: exit code 0, prints `"Q9 witness checked: ex(Q9, C4) >= 1532"`.
 
@@ -41,9 +41,9 @@ Consistency:
 
 - Lean `edges` list parsed and compared with the `.txt`: **identical sets**, 1532 = 1532, 0 differences.
 - Source contains **no `sorry`**, **no `axiom` declaration**, **no `admit`**.
-- Negative control `D:\lean-work\Q9Witness_bad.lean` (adds edge `(0,8)`, closing 6 squares): **fails**, exit code 1, with errors at `edges.length`, `c4free`, `edges_positive`, `certificate`. The check is non-vacuous.
+- Negative control `lean/CHECK.log (negative control)` (adds edge `(0,8)`, closing 6 squares): **fails**, exit code 1, with errors at `edges.length`, `c4free`, `edges_positive`, `certificate`. The check is non-vacuous.
 
-`#print axioms` (Lead-appended copy `research\lead_verify\Q9Witness_axioms.lean`):
+`#print axioms` (Lead-appended copy `lean/AXIOMS.log`):
 
     'Q9.ex_Q9_C4_at_least_1532' depends on axioms:
       [Q9.edges_all_valid._native.native_decide.ax_1_1,
@@ -61,5 +61,5 @@ Consistency:
 
 ## 5. Reproduce
 
-    python research\lead_verify\verify_q9.py research\c4-hypercube\edges_q9_1532.txt 9
-    D:\lean-work\lean3\lean-4.35.0-windows\bin\lean.exe research\lean\Q9Witness.lean
+    python verifiers/lead_verify_q9.py edges_q9_1532.txt 9
+    lean lean/Q9Witness.lean
