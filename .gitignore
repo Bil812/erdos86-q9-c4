@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Lean build artifacts
+*.olean
+*.ilean
+*.trace
+.lake/
+build/
