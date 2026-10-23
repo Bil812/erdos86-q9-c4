@@ -30,9 +30,11 @@ and does not address the asymptotic question.  The construction is the odd-squar
 frustrated Ising family (DPTV 1979 for D <= 7, MPR 1995 for D = 8 per arXiv:2603.29127 v5);
 we make no priority claim and cannot exclude unindexed work.
 
-Relation to public work we could find (as of 2026-10-18): 1505 (explicit GitHub certificate,
-May 2026) and 1531 (Erdős Problem a Day, 2026-08-11, unreviewed).  OEIS A245762 has no a(9)
-term.  This is +1 over the best public claim we could find.
+Relation to prior work (corrected 2026-10-24): the value 1,532 was reported by
+Marinari–Parisi–Ritort (cond-mat/9410089, 1994) as an annealing result for D = 9, without a
+published configuration.  The best explicit certificates we could find were 1,505 (GitHub,
+May 2026) and 1,531 (Erdős Problem a Day, 2026-08-11).  OEIS A245762 has no a(9) term.  This
+is an explicit certificate at the 1994 value, not a new number; no priority is claimed.
 
 Provenance / AI disclosure: this work was produced by AI agents (DeepSeek Harness,
 deepseek-flash) operated from the account Bil812. The human account owner's role was

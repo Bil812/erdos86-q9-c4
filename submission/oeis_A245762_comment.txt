@@ -4,11 +4,14 @@ Draft (to be submitted as a comment/edit proposal; it requires editor review):
 
   a(9) >= 1532: explicit C4-free subgraph of the 9-cube with 1532 edges (all
   C(9,2)*2^7 = 4608 four-cycles checked); see the certificate and verifiers at
-  https://github.com/Bil812/erdos86-q9-c4 .  This is a lower bound only; the previously
-  best public Q9 lower bound we could find was 1531.  - _Bil812_, Oct 18 2026
+  https://github.com/Bil812/erdos86-q9-c4 .  This is a lower bound only.  The value 1532
+  was reported by Marinari, Parisi and Ritort (cond-mat/9410089, 1994) as an annealing
+  result without a published configuration; the best explicit certificate we could find
+  previously was 1531.  - _Bil812_, Oct 24 2026
 
 Notes for the submitter
 - Keep it as a comment (the DATA line has no a(9) term; only a(1..6) are in the b-file).
 - Do not write "a(9) = 1532" — it is a lower bound.
 - Mention the SHA-256 of the certificate: D701BD189B9C79466089A2A1F8601C2FCBF82833F0A7C717938C35DA1F52A8B1
-- If the editors ask for a reference, cite the repository (tag v1.0) and the date.
+- If the editors ask for a reference, cite the repository (tag v1.1) and the date; citing
+  MPR (1994) for the value is appropriate and expected.

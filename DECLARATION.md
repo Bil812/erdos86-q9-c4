@@ -6,7 +6,9 @@
 
 ## A. 一句话主张（最常用）
 
-> 我构造了 9 维超立方体 Q₉ 上一个含 **1532 条边**、不含 4-环（C₄）的子图，并给出可复现的机器验证，因此 **f(9) ≥ 1532**（f(n) 为 Erdős #86 中的 C₄-free 最大边数）。
+> 我给出了 9 维超立方体 Q₉ 上一个含 **1532 条边**、不含 4-环（C₄）的**显式证书**，因此 **f(9) ≥ 1532**（f(n) 为 Erdős #86 中的 C₄-free 最大边数）。
+>
+> **优先权说明（2026-10-24 由社区复核指出并已核实）：数值 1532 本身并非新结果**——Marinari–Parisi–Ritort（cond-mat/9410089, 1994）已用退火报告该值（能量/自旋 −0.4947916…，即 2304 条边中的 1532 条满足边），但**未公布构型**。本工作提供的是该数值上的**公开显式证书 + Lean 检查**；不是新下界，也不是新数值。
 
 ---
 
@@ -14,7 +16,7 @@
 
 ### Claim
 
-We exhibit an explicit C₄-free subgraph of the 9-dimensional hypercube Q₉ with **1532 edges**, establishing the lower bound **f(9) ≥ 1532**, where f(n) = ex(Qₙ, C₄) is the maximum number of edges in a C₄-free subgraph of Qₙ.
+We exhibit an explicit C₄-free subgraph of the 9-dimensional hypercube Q₉ with **1532 edges**, establishing the lower bound **f(9) ≥ 1532**, where f(n) = ex(Qₙ, C₄) is the maximum number of edges in a C₄-free subgraph of Qₙ.  **The value is not new**: 1,532 was reported by Marinari–Parisi–Ritort (cond-mat/9410089, 1994) as an annealing result without a published configuration; this is an explicit certificate at that value.
 
 ### Witness
 
@@ -50,14 +52,15 @@ Literature review (OEIS A245762, erdősproblems.com/86, Minamoto arXiv:2603.2912
 - We make **no priority claim**: the comparison below is against public, indexed sources as of the stated date, and unindexed or private work may exist.
 - The construction lies in the odd-square (fully frustrated) family; the maximum of that family on Q₉ is not claimed to be 1532.
 
-### Relation to prior public work (as of 2026-10-18)
+### Relation to prior public work (as of 2026-10-24)
 
 | Source | Q₉ lower bound | Date | Note |
 |---|---|---|---|
+| Marinari–Parisi–Ritort, cond-mat/9410089 | **1532** (reported) | 1994 | annealing value, energy per spin −0.4947916…; no configuration published |
 | GitHub `rafalwronapl/erdos86-hypercube-c4` | 1505 | 2026-05 | explicit certificate |
-| erdosproblemaday.com, Q9 | 1531 | 2026-08-11 | AI-assisted, unreviewed; text says attempts to reach 1532 failed |
+| erdosproblemaday.com, Q9 | 1531 | 2026-08-11 | explicit certificate; its 1532 attempts had failed; page since corrected |
 | OEIS A245762 | no a(9) | — | a(1..6) only; comments to a(8) |
-| This work | **1532** | 2026-10-17 | +1 over the best public claim found |
+| this repository | **1532** (explicit) | 2026-10-18 | explicit certificate + Lean at the MPR-1994 value; verified 2026-10-24 |
 
 ### Provenance / AI disclosure
 
@@ -75,7 +78,7 @@ Literature review (OEIS A245762, erdősproblems.com/86, Minamoto arXiv:2603.2912
 
 ## C. 保守档：如实描述（综评/面试用，2—3 句）
 
-> 我让 AI agent（DeepSeek Harness）对 Erdős #86（超立方体上的 C₄-free 子图问题）做了一次有限下界计算：AI 构造出 Q₉ 上 1532 条边的无 C₄ 子图，并用 Python 穷举（4608 个 4-环）和 Lean 4 完成验证，得到 f(9) ≥ 1532（较公开可查最好 1531 +1，仅下界）。我的角色是提出任务、决定方向并公开结果；数学与验证由 AI 完成，本人未做独立数学工作。
+> 我让 AI agent（DeepSeek Harness）对 Erdős #86（超立方体上的 C₄-free 子图问题）做了一次有限下界计算：AI 构造出 Q₉ 上 1532 条边的无 C₄ 子图，并用 Python 穷举（4608 个 4-环）和 Lean 4 完成验证，得到 f(9) ≥ 1532（仅下界）。需要如实说明：该数值 1994 年已由 Marinari–Parisi–Ritort 报告（退火，未公布构型），本工作给出的是公开显式证书；2026-10-24 经社区独立复核为 VERIFIED（证书层面）。我的角色是提出任务、决定方向并公开结果；数学与验证由 AI 完成，本人未做独立数学工作。
 
 如实的一句话（不要写成“我解决了/我发现了”）：
 
@@ -87,7 +90,7 @@ Literature review (OEIS A245762, erdősproblems.com/86, Minamoto arXiv:2603.2912
 
 - ❌ “我解决了 Erdős #86 / 超立方体 Turán 问题” → 只解决了 n=9 的一个下界。
 - ❌ “ex(Q₉, C₄) = 1532 / 精确值” → 只是下界。
-- ❌ “首次 / 世界纪录” → 只能说“截至2026-10-18可查公开来源中最好”，且 1531 本身未评审。
+- ❌ “首次 / 世界纪录 / 新数值” → 1532 是 1994 年 MPR 已报告的值；只能说“此前公开显式证书最好为 1531”。
 - ❌ “纯 kernel 验证 / 只依赖三条标准公理” → 用了 `native_decide`，要说明。
 - ❌ “独立完成 / 没有用 AI” → 必须披露 AI 辅助。
 - ❌ “这是奥赛/科研水平的突破” → +1 的有限下界，别拔高。

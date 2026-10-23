@@ -1,5 +1,12 @@
 # Erdős Problem a Day — submission text (Q9, f(9) ≥ 1532)
 
+> **Status:** submitted 2026-10-18; independently verified **VERIFIED (as a certificate)**
+> on 2026-10-24.  The review corrected the priority context: the value 1,532 was reported
+> by Marinari–Parisi–Ritort (cond-mat/9410089, 1994) without a configuration, so this is an
+> explicit certificate at that value, not a new number.  The text below is kept as submitted,
+> with this correction noted; the repository README is the authoritative current version
+> (tag `v1.1`).
+
 Submit at <https://erdosproblemaday.com/submit> (problem #86).
 
 ---
@@ -32,12 +39,12 @@ and proves `Q9.ex_Q9_C4_at_least_1532`.  The `native_decide` evaluation axioms a
 in `lean/AXIOMS.log`; a negative control (adding an edge that closes a square) is rejected.
 There is no `sorry`/`admit` and no hand-written axiom.
 
-**Relation to prior public work (as of 2026-10-18):** we found two public Q₉ lower bounds:
-1505 (an explicit certificate on GitHub, May 2026) and 1531 (your 2026-08-11 write-up, whose
-text states attempts to reach 1532 failed).  OEIS A245762 has no `a(9)`.  This submission is
-**+1 over the best public claim we could find**; we make no priority claim and cannot exclude
-unindexed work (in particular, old statistical-physics computations of fully frustrated Ising
-ground states for D = 9).
+**Relation to prior work (corrected 2026-10-24).**  The value 1,532 was reported by
+Marinari–Parisi–Ritort (cond-mat/9410089, 1994) as an annealing result for D = 9, without a
+published configuration.  The best *explicit certificates* we could find were 1,505 (GitHub,
+May 2026) and 1,531 (the 2026-08-11 write-up on this site).  OEIS A245762 has no `a(9)`.
+So this submission is an explicit certificate at the 1994 value — **not a new number and not
+a new lower bound for the literature**; no priority is claimed.
 
 **Scope:** does not determine `f(9)`, does not prove optimality, does not address the
 asymptotic question.  The construction is an odd-square / fully frustrated Ising set.

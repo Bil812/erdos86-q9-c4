@@ -1,8 +1,11 @@
 # Submission kit — Erdős #86, Q₉ lower bound f(9) ≥ 1532
 
-Status: artifacts are public at <https://github.com/Bil812/erdos86-q9-c4> (tag `v1.0`).
-This directory contains ready-to-paste texts for the community channels listed below.
-Nothing here claims that the result has been reviewed or accepted anywhere.
+Status: artifacts are public at <https://github.com/Bil812/erdos86-q9-c4>
+(tag `v1.0` = version submitted; tag `v1.1` = corrected after review).
+The Erdős Problem a Day submission was **verified as a certificate on 2026-10-24**; the
+review corrected the priority context: 1,532 was reported by Marinari–Parisi–Ritort (1994)
+without a configuration, so this work is an explicit certificate at that value, not a new
+number.  This directory keeps the ready-to-paste texts for the remaining channels.
 
 ## Order of operations (do not reorder)
 
@@ -33,8 +36,8 @@ review, and it must be phrased as a lower bound with the repository as the sourc
 
 - ❌ "solved Erdős #86" / "resolved the hypercube Turán problem"
 - ❌ "f(9) = 1532" / "ex(Q9,C4) = 1532"
-- ❌ "first" / "world record" — only "+1 over the best public claim we could find as of
-  2026-10-18", and the 1531 claim itself is unreviewed
+- ❌ "first" / "world record" / "new value" — 1,532 was reported by MPR (1994); the only
+  defensible statement is "best previously published *explicit certificate* was 1,531"
 - ❌ "pure kernel verification" / "only the three standard axioms" — the Lean proof uses
   `native_decide`; the evaluation axioms are listed in `lean/AXIOMS.log`
 - ❌ "done independently" without mentioning AI assistance
@@ -42,9 +45,10 @@ review, and it must be phrased as a lower bound with the repository as the sourc
 ## Safe one-liners
 
 - **Conservative (honest description):**
-  > 我让 AI agent（DeepSeek Harness）对 Erdős #86 做了一次 Q₉ 有限下界计算：AI 构造出
-  > 1532 条边的无 C₄ 子图，并经 Python 穷举与 Lean 4 验证，得 f(9) ≥ 1532（较公开可查
-  > 最好 1531 +1，仅下界）。我的角色是提出任务并公开结果，数学与验证由 AI 完成。
+  > 我让 AI agent（DeepSeek Harness）对 Erdős #86 做了一次 Q₉ 有限计算：AI 构造出 1532 条
+  > 边的无 C₄ 子图并经 Python/Lean 验证，得 f(9) ≥ 1532（仅下界）。该数值 1994 年 MPR 已
+  > 报告（退火，无构型）；本工作提供公开显式证书。我的角色是提出任务并公开结果，数学与
+  > 验证由 AI 完成。
 - **Standard (README / submission):**
   > We exhibit an explicit C₄-free subgraph of Q₉ with 1532 edges, establishing the lower
   > bound f(9) ≥ 1532.  Certificate: `edges_q9_1532.txt` (SHA-256 `D701BD18…52A8B1`).
